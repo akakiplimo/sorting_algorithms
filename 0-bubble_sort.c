@@ -20,7 +20,7 @@ n = size;
 while (n > 0)
 {
 next = 0;
-for (i = 0; i < n-1; i++)
+for (i = 0; i < n - 1; i++)
 {
 if (array[i] > array[i + 1])
 {
