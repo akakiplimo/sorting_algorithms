@@ -22,7 +22,7 @@ struct listint_s *next;
 /* auxiliary function prototypes */
 void swap(listint_t **head, listint_t *node1, listint_t *node2);
 void sort_alg(int *arr, int left, int right, size_t size);
-int split(int *arr, int left, int right, size_t size);
+int partition(int *arr, int left, int right, size_t size);
 
 /* printing functions */
 void print_array(const int *array, size_t size);

@@ -27,21 +27,21 @@ int pivot;
 
 if (left < right)
 {
-pivot = split(arr, left, right, size);
+pivot = partition(arr, left, right, size);
 sort_alg(arr, left, pivot - 1, size);
 sort_alg(arr, pivot + 1, right, size);
 }
 }
 
 /**
-* split - split array
+* partition - partitioning array
 * @arr: array
 * @left: leftmost index
 * @right: rightmost index
 * @size: size of array
 * Return: pivot index
 */
-int split(int *arr, int left, int right, size_t size)
+int partition(int *arr, int left, int right, size_t size)
 {
 int i, j, pivot, temp;
 
